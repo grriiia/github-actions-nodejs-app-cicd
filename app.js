@@ -3,7 +3,7 @@ const http = require('http');
 
 const hostname = '0.0.0.0';
 const port = 3000;
-
+const lkg =10;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Node JS Server is  running at http://${hostname}:${port}/`);
+  console.log(`NodeJS Server is running at http://${hostname}:${port}/`);
 });
 
 module.exports = server;
